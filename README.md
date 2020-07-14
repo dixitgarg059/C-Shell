@@ -7,9 +7,9 @@ Here dir/ means a Directory path
 
     echo: The echo.c file handles the echo command This supports echo abc which prints abc and if we do echo "abc" it prints "abc"
 
-    cd: The cd.c file handles the cd command with cd ~ ,cd - being supported This supports: cd dir/ cd ~ cd - cd
+    ## cd: The cd.c file handles the cd command with cd ~ ,cd - being supported This supports: cd dir/ cd ~ cd - cd
 
-    history: The history.c handles both the addition of the command to the storage file and the function call history history prints the last 10 commands while history n prints last n commands n<=10;
+    ## history: The history.c handles both the addition of the command to the storage file and the function call history history prints the last 10 commands while history n prints last n commands n<=10;
 
     ls: The ls.c file handles the various types of ls commands This supports: ls ls -l ls -la ls -al ls -a ls dir/ ls -l dir/ ls -la dir/ ls -al dir/ ls -a dir/
 
@@ -67,28 +67,5 @@ Here dir/ means a Directory path
 
     cronjob -c -t -p command which executes a particular command in fixed time interval for a certain period.
 
-for implementing these commands, various functions in seperate file are coded:
-
-    files:
-
-    -cronjob.c
-
-    -fg.c
-
-    -jobs.c
-
-    -kjobs.c
-
-    -overkill.c
-
-    -recenthistory.c
-
-    -setenv.c
-
-    -unsetenv.c
-
-    -trim.c
-
-    -redirect.c
 
 
